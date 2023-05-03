@@ -1,5 +1,8 @@
 {
     "files.associations": {
-        "mft.h": "c"
+        "mft.h": "c",
+        "symboltable.h": "c",
+        "semantic.h": "c",
+        "stdio.h": "c"
     }
 }

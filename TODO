@@ -12,4 +12,13 @@ ComplierProj1
     如果发生冲突, 则直接弹栈+再同步, 不会回溯.
 4. 实验括号不必定义结合性优先级(不会有二义性)(不重要)
 
+ComplierProj2
+0. 存在几处内存没有释放（不影响程序结果）。
+    一是Exp-> Exp ASSIGNOP Exp 产生式中，发生错误时应当加上deletetype（）。
+    没发生错误应该返回expTypeLeft而不是copyType（expTypeLeft）（%%Exp其他产生式
+    也可能有类似问题）
+
+    二是VarDec， 当添加结构体类型时，创建的符号表条目不必插入符号表，但没有
+    使用后没有释放条目所占这部分空间。
+
 
