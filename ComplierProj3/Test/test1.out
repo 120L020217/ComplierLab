@@ -1,0 +1,24 @@
+FUNCTION main :
+READ t0
+n := t0
+IF n > #0 GOTO label0
+GOTO label1
+LABEL label0 :
+ARG #1
+WRITE #1
+GOTO label2
+LABEL label1 :
+IF n < #0 GOTO label3
+GOTO label4
+LABEL label3 :
+t1 := #0 - #1
+ARG t1
+WRITE t1
+GOTO label5
+LABEL label4 :
+ARG #0
+WRITE #0
+LABEL label5 :
+LABEL label2 :
+RETURN #0
+FUNCTION func :
